@@ -23,14 +23,14 @@ jobs:
         with:
           context: ./crud-dd-task-mean-app-1/backend
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/crud-backend:latest
+          tags: akhiranandh1/crud-backend:latest
 
       - name: Build & Push Frontend Image
         uses: docker/build-push-action@v6
         with:
           context: ./crud-dd-task-mean-app-1/frontend
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/crud-frontend:latest
+          tags: akhiranandh1/crud-frontend:latest
 
       - name: Deploy to VM
         uses: appleboy/ssh-action@v0.1.7
