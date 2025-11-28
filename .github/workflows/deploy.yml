@@ -21,14 +21,14 @@ jobs:
       - name: Build & Push Backend Image
         uses: docker/build-push-action@v6
         with:
-          context: ./backend
+          context: ./crud-dd-task-mean-app-1/backend
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/crud-backend:latest
 
       - name: Build & Push Frontend Image
         uses: docker/build-push-action@v6
         with:
-          context: ./frontend
+          context: ./crud-dd-task-mean-app-1/frontend
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/crud-frontend:latest
 
