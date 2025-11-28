@@ -24,6 +24,7 @@ docker-compose up -d --build
 
 Access services locally
 
+
 Angular UI (via Nginx): http://localhost
 
 API base URL: http://localhost/api
