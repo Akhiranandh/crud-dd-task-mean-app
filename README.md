@@ -109,18 +109,3 @@ docker compose up -d --build
 This provides an automated pipeline: pushing code to main automatically builds images, updates them on EC2, and restarts the containers.
 
 
-### CI/CD workflow
-
-![GitHub Actions workflow](screenshots/actions.png)
-
-### Docker Hub images
-
-![Docker Hub images](screenshots/docker-hub.png)
-
-### Deployed application UI
-
-![Live MEAN app UI](screenshots/app-ui.png)
-
-### Nginx / Docker Compose setup
-
-![Nginx and Docker Compose](screenshots/nginx-compose.png)
